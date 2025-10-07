@@ -1,0 +1,218 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sudhan Dass -- Portfolio</title>
+  <meta name="description" content="Portfolio -- achievements, projects, skills, contact" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#4f46e5; --glass: rgba(255,255,255,0.04);
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial; margin:0; background:linear-gradient(180deg,var(--bg),#071025 120%); color:#e6eef6; -webkit-font-smoothing:antialiased;}
+    .container{max-width:1100px;margin:40px auto;padding:24px}header{display:flex;gap:20px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:16px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-weight:600}
+.hero{display:grid;grid-template-columns:1fr 360px;gap:32px;margin-top:28px;align-items:center}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:14px; padding:20px;box-shadow: 0 6px 20px rgba(2,6,23,0.6);}
+.intro h1{margin:0;font-size:28px}
+.intro p{color:var(--muted);line-height:1.6}
+.cta{margin-top:16px;display:flex;gap:12px}
+.btn{padding:10px 14px;border-radius:10px;font-weight:700;border:0;cursor:pointer}
+.btn-primary{background:linear-gradient(90deg,var(--accent),#06b6d4);color:white}
+.btn-ghost{background:transparent;color:var(--muted);border:1px solid rgba(255,255,255,0.04)}
+
+/* Sidebar profile */
+.profile{display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center}
+.avatar{width:140px;height:140px;border-radius:18px;background:linear-gradient(135deg,#111827,#0b1220);display:flex;align-items:center;justify-content:center;font-size:52px;color:var(--muted)}
+.roles{color:var(--muted);font-weight:600}
+.links{display:flex;gap:10px}
+.pill{background:var(--glass);padding:8px 10px;border-radius:999px;color:var(--muted);font-weight:600}
+
+/* Sections */
+section{margin-top:26px}
+.section-title{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.section-title h2{margin:0}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+
+/* Skills */
+.skill{display:flex;flex-direction:column;gap:8px}
+.skill .bar{height:12px;background:rgba(255,255,255,0.05);border-radius:999px;overflow:hidden}
+.skill .bar > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#06b6d4);border-radius:999px}
+
+/* Projects */
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.proj{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));min-height:140px}
+.proj h3{margin:6px 0 6px}
+.tags{display:flex;gap:8px;flex-wrap:wrap}
+.tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;font-size:13px;color:var(--muted)}
+
+/* Achievements */
+.ach-list{display:flex;flex-direction:column;gap:8px}
+.ach{padding:10px;border-radius:10px;background:rgba(255,255,255,0.02)}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input, textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit}
+textarea{min-height:120px}
+footer{margin-top:36px;padding:16px;text-align:center;color:var(--muted)}
+
+/* Responsive */
+@media (max-width:980px){.hero{grid-template-columns:1fr;}.projects{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}}
+@media (max-width:620px){.projects{grid-template-columns:1fr}.container{padding:16px}}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SD</div>
+        <div>
+          <div style="font-weight:800">Sudhan Dass</div>
+          <div style="font-size:13px;color:var(--muted)">Cybersecurity · Full‑stack · Developer</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header><div class="hero">
+  <div class="intro card">
+    <h1>Hi -- I'm <span style="background:linear-gradient(90deg,var(--accent),#06b6d4);-webkit-background-clip:text;color:transparent;">Sudhan</span></h1>
+    <p>I build secure and user-friendly applications. I love learning new tech, fixing hard bugs, and shipping polished projects. Below you'll find highlights of my work, skills, and how to reach me.</p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#projects">See Projects</a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+
+    <section id="about" style="margin-top:18px">
+      <div class="section-title"><h2>About</h2><small class="pill">Open to work</small></div>
+      <p style="color:var(--muted)">I am a cybersecurity student and developer from Salem. I specialize in web development, security, and embedded C programming. I enjoy hands-on learning and practical projects that solve real problems.</p>
+    </section>
+
+    <section id="achievements">
+      <div class="section-title"><h2>Achievements</h2><a class="pill" href="#">Download CV</a></div>
+      <div class="ach-list">
+        <div class="ach">🏆 Winner -- College hackathon 2024 -- Built a secure file sharing app.</div>
+        <div class="ach">📜 Certification -- CISSP (sample) / or list your certificates here.</div>
+        <div class="ach">🎓 Top 5 in Programming contest -- Regional level.</div>
+      </div>
+    </section>
+
+  </div>
+
+  <aside class="card profile">
+    <div class="avatar">SD</div>
+    <div style="font-weight:700">Sudhan Dass</div>
+    <div class="roles">Cybersecurity • Full‑Stack • Student</div>
+    <div style="font-size:13px;color:var(--muted)">Salem, India</div>
+
+    <div class="links" style="margin-top:8px">
+      <a class="pill" href="#contact">Email</a>
+      <a class="pill" href="#projects">Portfolio</a>
+    </div>
+
+    <div style="width:100%;margin-top:12px;text-align:left">
+      <div style="font-weight:700;margin-bottom:8px">Quick Info</div>
+      <div style="color:var(--muted);font-size:14px;line-height:1.5">Phone: <a href="tel:+91-0000000000" style="color:inherit;text-decoration:none">+91 00000 00000</a><br>Email: <a href="mailto:youremail@example.com" style="color:inherit;text-decoration:none">youremail@example.com</a></div>
+    </div>
+
+  </aside>
+</div>
+
+<section id="projects" class="card">
+  <div class="section-title"><h2>Projects</h2><small style="color:var(--muted)">Some recent work</small></div>
+  <div class="projects" id="projects-list">
+    <div class="proj">
+      <strong>SecureShare</strong>
+      <h3>Encrypted file sharing web app</h3>
+      <p style="color:var(--muted);font-size:14px">A simple web app to share files with end-to-end encryption and expiring links.</p>
+      <div class="tags" style="margin-top:10px"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Crypto</span></div>
+    </div>
+    <div class="proj">
+      <strong>PortScanner</strong>
+      <h3>Lightweight port scanner</h3>
+      <p style="color:var(--muted);font-size:14px">A small tool to scan common TCP ports and report service banners.</p>
+      <div class="tags" style="margin-top:10px"><span class="tag">C</span><span class="tag">Sockets</span><span class="tag">Linux</span></div>
+    </div>
+    <div class="proj">
+      <strong>Portfolio Site</strong>
+      <h3>This very website</h3>
+      <p style="color:var(--muted);font-size:14px">A responsive single-page site showcasing projects and contact info.</p>
+      <div class="tags" style="margin-top:10px"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JS</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="card">
+  <div class="section-title"><h2>Skills</h2><small class="pill">Technical</small></div>
+  <div class="grid">
+    <div>
+      <div class="skill"><label>HTML / CSS</label><div class="bar" aria-hidden><i style="width:95%"></i></div></div>
+      <div class="skill"><label>JavaScript / React</label><div class="bar" aria-hidden><i style="width:85%"></i></div></div>
+      <div class="skill"><label>Node.js / Express</label><div class="bar" aria-hidden><i style="width:80%"></i></div></div>
+    </div>
+    <div>
+      <div class="skill"><label>Cybersecurity</label><div class="bar" aria-hidden><i style="width:78%"></i></div></div>
+      <div class="skill"><label>C Programming</label><div class="bar" aria-hidden><i style="width:82%"></i></div></div>
+      <div class="skill"><label>Linux / DevOps</label><div class="bar" aria-hidden><i style="width:70%"></i></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="card">
+  <div class="section-title"><h2>Contact</h2><small style="color:var(--muted)">Let's build something</small></div>
+  <div class="contact-grid">
+    <div>
+      <p style="color:var(--muted)">Prefer email? Click below to send me a message directly.</p>
+      <a class="btn btn-primary" href="mailto:youremail@example.com?subject=Hello%20Sudhan">Email Me</a>
+
+      <div style="margin-top:14px;color:var(--muted);font-size:14px">
+        <div>Phone: <a href="tel:+91-0000000000" style="color:inherit;text-decoration:none">+91 00000 00000</a></div>
+        <div style="margin-top:8px">LinkedIn: <a href="#" style="color:inherit;text-decoration:underline">your-linkedin</a></div>
+      </div>
+    </div>
+
+    <div>
+      <form onsubmit="submitForm(event)">
+        <input type="text" id="name" placeholder="Your name" required />
+        <input type="email" id="email" placeholder="Your email" required />
+        <textarea id="message" placeholder="Message..." required></textarea>
+        <div style="margin-top:10px"><button class="btn btn-primary" type="submit">Send</button></div>
+        <small id="form-note" style="display:block;margin-top:8px;color:var(--muted)">This will open your email client.</small>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div style="font-size:14px">Made with ❤️ -- Sudhan Dass • <span style="color:var(--muted)">2025</span></div>
+</footer>
+
+  </div>  <script>
+    function submitForm(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = `mailto:youremail@example.com?subject=${subject}&body=${body}`;
+    }
+  </script>  <!--
+    How to use:
+    1. Replace placeholders (youremail@example.com, phone, achievements, project details) with your real info.
+    2. Save this file as sudhan_portfolio.html and open locally or deploy to GitHub Pages / Netlify.
+    3. If you'd like a PDF, downloadable CV button, or multi-page site, ask me to add those.
+  --></body>
+</html>
